@@ -24,7 +24,7 @@ h1 {
 p {
     color: #e9e8ee;
     text-align: justify;
-    font-size: 1.5rem;
+    font-size: 1rem;
 }
 
 .images {
@@ -44,3 +44,45 @@ p {
 .images img:hover {
     transform: scale(1.2);
 }
+
+@media (max-width: 1920) {
+    body {
+        width: 70%;
+    }
+
+    h1 {
+        font-size: 5rem;
+    }
+
+    p {
+        font-size: 1.25rem;
+    }
+
+    .images {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .images img {
+        margin-bottom: 2rem;
+    }
+}
+
+@media (max-width: 480px) {
+    h1 {
+        font-size: 2rem;
+    }
+
+    p {
+        font-size: 0.875rem;
+    }
+
+    .images img {
+        width: 100%;
+    }
+}
+
+/* img {
+    border: 2px solid red;
+    border-radius: 100%;
+} */
